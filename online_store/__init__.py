@@ -13,3 +13,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get(
 )
 
 db.init_app(app)
+from online_store.books_store.models import *
+with app.app_context():
+    db.create_all()
