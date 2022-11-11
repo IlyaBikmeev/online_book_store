@@ -1,0 +1,145 @@
+{% extends 'base.html'%}
+{% block title %}Book{% endblock %}
+{% block style %}<link rel="stylesheet" href="{{ url_for('static', filename='css/content.css') }}">{% endblock %}
+{% block content %}
+<section class="section">
+    <div class="categories">
+    </div>
+    <div class="wraper">
+        <div class="wraper_content">
+            <div class="block_content">
+            <div class="block_img"><a href="#"><img class="block_img" src="https://cdn.azbooka.ru/cv/w1100/a7fa791d-1eaa-40e5-9418-1c84d01a69b9.jpg" alt=""></a></div>
+            <div class="title_block"><a href="#"><h3>Война и мир</h3></a></div>
+            <div class="author_block"><a href="#"><h4>Лев Толстой</h4></a></div>
+            <hr class="hr_content">
+            <div class="price">
+                <img class="rub" src="static/img/russian-rouble-coin-color-icon.svg" alt="">
+                <h3>9999</h3>
+                <div class="basket"><a href="#"><img class="rub" id="basket" src="static/img/icons8-продать-запас-48.png" alt=""></a></div>
+            </div>
+        </div>
+
+         <div class="block_content">
+            <div class="block_img"><a href="#"><img class="block_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1RzgfBjZTtuVxAWFo3T_Hf0lOOxnzwoBwChG6vtrqtU9Ymq5X--ntuo3-ajllsq7TTUk&usqp=CAU" alt=""></a></div>
+            <div class="title_block"><h3>Война и мир</h3></div>
+            <div class="author_block"><h4>Лев Толстой</h4></div>
+            <hr class="hr_content">
+            <div class="price">
+                <img class="rub" src="static/img/russian-rouble-coin-color-icon.svg" alt="">
+                <h3>9999</h3>
+                <div class="basket"><a href="#"><img class="rub" src="static/img/icons8-скидки-на-покупку-48.png" alt=""></a></div>
+            </div>
+         </div>
+
+         <div class="block_content">
+            <div class="block_img"><img class="block_img" src="https://cv9.litres.ru/pub/c/elektronnaya-kniga/cover_max1500/174895-author-tolstoyi_lev-kniga_polikushka1863_ru.jpg" alt=""></div>
+            <div class="title_block"><h3>Война и мир</h3></div>
+            <div class="author_block"><h4>Лев Толстой</h4></div>
+            <hr class="hr_content">
+            <div class="price">
+                <img class="rub" src="static/img/russian-rouble-coin-color-icon.svg" alt="">
+                <h3>9999</h3>
+                <div class="basket"><a href="#"><img class="rub" src="static/img/Shape.png" alt=""></a></div>
+            </div>
+         </div>
+
+        <div class="block_content">
+            <div class="block_img"><img class="block_img" src="https://img.biblioclub.ru/cover/ec70344294af70eaab7da2911641d466x9povofdpe/cover.jpg" alt=""></div>
+            <div class="title_block"><h3>Война и мир</h3></div>
+            <div class="author_block"><h4>Лев Толстой</h4></div>
+            <hr class="hr_content">
+            <div class="price">
+                <img class="rub" src="static/img/russian-rouble-coin-color-icon.svg" alt="">
+                <h3>9999</h3>
+                <div class="basket"><a href="#"><img class="rub" src="static/img/icons8-купить.gif" alt=""></a></div>
+            </div>
+        </div>
+
+        <div class="block_content">
+            <div class="block_img"><img class="block_img" src="https://toplib.net/books/tolstoj-lev-vojna-i-mir-kniga-1.jpg" alt=""></div>
+            <div class="title_block"><h3>Война и мир</h3></div>
+            <div class="author_block"><h4>Лев Толстой</h4></div>
+            <hr class="hr_content">
+            <div class="price">
+                <img class="rub" src="static/img/russian-rouble-coin-color-icon.svg" alt="">
+                <h3>9999</h3>
+                <div class="basket"><a href="#"><img class="rub" src="static/img/icons8-скидки-на-покупку-48.png" alt=""></a></div>
+            </div>
+        </div>
+                
+        <div class="block_content">
+            <div class="block_img"><img class="block_img" src="https://cdn1.ozone.ru/multimedia/1001729497.jpg" alt=""></div>
+                    <div class="title_block"><h3>Война и мир</h3></div>
+                    <div class="author_block"><h4>Лев Толстой</h4></div>
+                    <hr class="hr_content">
+                    <div class="price">
+                        <img class="rub" src="static/img/russian-rouble-coin-color-icon.svg" alt="">
+                        <h3>9999</h3>
+                        <div class="basket"><a href="#"><img class="rub" src="static/img/icons8-скидки-на-покупку-48.png" alt=""></a></div>
+                    </div>    
+                </div>
+
+        <div class="block_content">
+            <div class="block_img"><a href="#"><img class="block_img" src="https://cdn.azbooka.ru/cv/w1100/a7fa791d-1eaa-40e5-9418-1c84d01a69b9.jpg" alt=""></a></div>
+                    <div class="title_block"><h3>Война и мир</h3></div>
+                    <div class="author_block"><h4>Лев Толстой</h4></div>
+                    <hr class="hr_content">
+                    <div class="price">
+                        <img class="rub" src="static/img/russian-rouble-coin-color-icon.svg" alt="">
+                        <h3>9999</h3>
+                        <div class="basket"><a href="#"><img class="rub" src="static/img/icons8-скидки-на-покупку-48.png" alt=""></a></div>
+                    </div>
+                </div>
+
+        <div class="block_content">
+         <div class="block_img"><a href="#"><img class="block_img" src="https://cdn.azbooka.ru/cv/w1100/a7fa791d-1eaa-40e5-9418-1c84d01a69b9.jpg" alt=""></a></div>
+                    <div class="title_block"><h3>Война и мир</h3></div>
+                    <div class="author_block"><h4>Лев Толстой</h4></div>
+                    <hr class="hr_content">
+                    <div class="price">
+                        <img class="rub" src="static/img/russian-rouble-coin-color-icon.svg" alt="">
+                        <h3>9999</h3>
+                        <div class="basket"><a href="#"><img class="rub" src="static/img/icons8-скидки-на-покупку-48.png" alt=""></a></div>
+                    </div>
+                </div>
+
+        <div class="block_content">
+            <div class="block_img"><a href="#"><img class="block_img" src="https://cdn.azbooka.ru/cv/w1100/a7fa791d-1eaa-40e5-9418-1c84d01a69b9.jpg" alt=""></a></div>
+                    <div class="title_block"><h3>Война и мир</h3></div>
+                    <div class="author_block"><h4>Лев Толстой</h4></div>
+                    <hr class="hr_content">
+                    <div class="price">
+                        <img class="rub" src="static/img/russian-rouble-coin-color-icon.svg" alt="">
+                        <h3>9999</h3>
+                        <div class="basket"><a href="#"><img class="rub" src="static/img/icons8-скидки-на-покупку-48.png" alt=""></a></div>
+                    </div>
+                </div>
+
+        <div class="block_content">
+            <div class="block_img"><a href="#"><img class="block_img" src="https://cdn.azbooka.ru/cv/w1100/a7fa791d-1eaa-40e5-9418-1c84d01a69b9.jpg" alt=""></a></div>
+                    <div class="title_block"><h3>Война и мир</h3></div>
+                    <div class="author_block"><h4>Лев Толстой</h4></div>
+                    <hr class="hr_content">
+                    <div class="price">
+                        <img class="rub" src="static/img/russian-rouble-coin-color-icon.svg" alt="">
+                        <h3>9999</h3>
+                        <div class="basket"><a href="#"><img class="rub" src="static/img/icons8-скидки-на-покупку-48.png" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="paginate wrapper">
+                <ul>
+                    <li><a href="#">&lang;</a></li>
+                    <li><a href="#"class="active">1</a></li>
+                    <li><a href="#" class="inactive">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#" class="more">&hellip;</a></li>
+                    <li><a href="#">&rang;</a></li>
+                </ul>
+            </div>      
+        </div>
+    </section>
+ {% endblock %}
+
+
