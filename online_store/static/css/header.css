@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    }
+    div.nav {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 12%;
+    height: max-content;
+    background-color: #414141;
+    display: flex;
+    justify-content: right;
+    }
+    li {
+    display: inline;
+    margin: 0 10px;
+    }
+    li > a {
+    color: rgb(232, 232, 232);
+    text-decoration: none;
+    }
+    div.header {
+    display: flex;
+    height: 112px;
+    background: linear-gradient(#ffffff, #ebebeb);
+    }
+    div.logo {
+    width: 20%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    float: left;
+    }
+    .image {
+    width: 50%;
+    }
+    div.search {
+    width: 40%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    }
+    div.search-field {
+    width: 80%;
+    background-color: #79b260;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline;
+    }
+    div.search-field-input {
+    width: 70%;
+    overflow-x: auto;
+    overflow-y: auto;
+    float: left;
+    }
+    div.search-field-button {
+    padding-left: 2em;
+    width: max-content;
+    display: inline;
+    }
+    input.search-input {
+    width: 100%;
+    height: 3em;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    border: none;
+    }
+    button.search-button {
+    font-size: 14pt;
+    background: transparent;
+    border: none;
+    color: white;
+    }
+    div.cart {
+    width: 15%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    float: left;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    }
+    div.cart-field-top {
+    height: 56px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    }
+    div.cart-top {
+    width: 33%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    }
+    div.cart-your-cart {
+    width: 33%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    float: left;
+    }
+    div.cart-items {
+    width: 33%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    float: left;
+    }
+    div.cart-field-bottom {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    }
+    p.price{
+    padding-top: 5%;
+    color: grey;
+    font-size: 20pt;
+    }
+    div.cart-bottom {
+    width: 50%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    }
+    input.checkout-button {
+    height: max-content;
+    background: linear-gradient(#414141,#272727);
+    padding: 5%;
+    margin: 10%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+    }
+    div.line {
+    border-right: 1px solid rgb(123, 123, 123);
+    width: 1%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    float: left;
+    }
+    div.wishlist {
+    width: 19%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: center;
+    float: left;
+    }
+    div.wishlist-field-top {
+    height: 50%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: flex-end;
+    }
+    div.wishlist-top-image {
+    width: 50%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    }
+    image.image-wish {
+    width: 50%;
+    }
+    div.wishlist-top {
+    width: 50%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+    }
+    div.amount-wishlist {
+    width: max-content;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #79b260;
+    border-radius: 30%;
+    color: white;
+    }
+    div.wishlist-field-bottom {
+    height: 50%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    }
+    div.wishlist-bottom {
+    width: 100%;
+    padding-left: 20%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    float: left;
+    }
+    input.wishlist-button {
+    background: transparent;
+    border: none;
+    color: grey;
+    font-size: 16pt;
+    }
