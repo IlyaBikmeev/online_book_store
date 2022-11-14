@@ -16,3 +16,6 @@ db.init_app(app)
 from online_store.books_store.models import *
 with app.app_context():
     db.create_all()
+
+import online_store.books_store.views
+
