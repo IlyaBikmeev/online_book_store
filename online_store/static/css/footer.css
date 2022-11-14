@@ -1,9 +1,11 @@
 body {
     margin: 0;
-    color: #c9c8c8;
     font-family: sans-serif;
 }
 
+.footer{
+    color: #c9c8c8;
+}
 .categ {
     background-color: #414642;
     padding: 24px 0;
