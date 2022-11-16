@@ -32,7 +32,7 @@
 
 .logo {
     width: 20%;
-    margin-left: 115px;
+    margin-left: 90px;
     overflow-x: auto;
     overflow-y: hidden;
     display: flex;
@@ -47,13 +47,12 @@
 
 .search {
     margin-left: 40px;
-    width: 25%;
+    width: 400px;
     overflow-x: auto;
     overflow-y: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    float: left;
     }
 
 .search-field {
@@ -69,12 +68,11 @@
     overflow-x: auto;
     overflow-y: auto;
     float: left;
-    margin-right: 1em;
+    margin-right: 10px;
     }
 
 .search-field-button {
     padding-top: 2px;
-    display: flex;
     align-items: center;
     }
 

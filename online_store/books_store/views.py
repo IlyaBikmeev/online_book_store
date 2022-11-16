@@ -4,5 +4,5 @@ from online_store import app
 
 
 @app.route('/')
-def test():
+def index():
     return render_template('content.html')
