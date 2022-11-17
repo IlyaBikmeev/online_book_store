@@ -1,6 +1,6 @@
 from online_store import app
 from online_store.books_store.models import *
-from flask import jsonify
+from flask import jsonify, render_template
 
 
 @app.route('/')
