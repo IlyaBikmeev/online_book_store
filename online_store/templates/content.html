@@ -1,6 +1,5 @@
 {% extends 'base.html'%}
 {% block title %}Book{% endblock %}
-{% block style %}<link rel="stylesheet" href="{{ url_for('static', filename='css/content.css') }}">{% endblock %}
 {% block content %}
 <section class="section">
     <div class="categories">
@@ -130,12 +129,12 @@
         
             <div class="paginate wrapper">
                 <ul>
-                    <li><a href="#">&lang;</a></li>
-                    <li><a href="#"class="active">1</a></li>
-                    <li><a href="#" class="inactive">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#" class="more">&hellip;</a></li>
-                    <li><a href="#">&rang;</a></li>
+                    <li class="paginate_moduls"><a href="#">&lang;</a></li>
+                    <li class="paginate_moduls"><a href="#"class="active">1</a></li>
+                    <li class="paginate_moduls"><a href="#" class="inactive">2</a></li>
+                    <li class="paginate_moduls"><a href="#">3</a></li>
+                    <li class="paginate_moduls"><a href="#" class="more">&hellip;</a></li>
+                    <li class="paginate_moduls"><a href="#">&rang;</a></li>
                 </ul>
             </div>      
         </div>

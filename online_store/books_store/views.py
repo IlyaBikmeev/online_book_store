@@ -3,6 +3,10 @@ from online_store.books_store.models import *
 from flask import jsonify
 
 
+@app.route('/')
+def index():
+    return render_template('content.html')
+
 @app.route('/api/books/<int:book_id>')
 def get_info(book_id):
     book_info = db.session.query(Book).get(book_id)
@@ -18,3 +22,4 @@ def get_info(book_id):
         )
     else:
         return jsonify()
+      
