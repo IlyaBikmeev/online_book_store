@@ -23,3 +23,18 @@ def get_info(book_id):
     else:
         return jsonify()
       
+@app.route('/api/books')
+def get_all_books():
+    result = []
+    all_books = Book.query.all()
+    for book in all_books:
+        my_json = {"id": book.id,
+            "title": book.title,
+            "price": book.price,
+            "amount": book.amount,
+            "image_path": book.image_path,
+            "author_id": book.author.id,
+            "genre": [gen.name for gen in book.genres]}
+        result.append(my_json)
+    return jsonify(result)
+  
