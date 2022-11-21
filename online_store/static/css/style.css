@@ -28,21 +28,18 @@
     display: flex;
     height: 112px;
     background: linear-gradient(#ffffff, #ebebeb);
+    justify-content: center;
     }
 
 .logo {
-    width: 20%;
-    margin-left: 90px;
-    overflow-x: auto;
-    overflow-y: hidden;
+    width: 12%;
     display: flex;
     justify-content: right;
     align-items: center;
-    float: left;
     }
 
 .image {
-    width: 50%;
+    width: 160px;
     }
 
 .search {
@@ -111,16 +108,16 @@
     }
 
 .cart-field-top {
-    height: 56px;
+    height: 50px;
     overflow-x: auto;
     overflow-y: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-end;
     }
 
 .cart-top {
-    width: 33%;
+    width: 15%;
     overflow-x: auto;
     overflow-y: hidden;
     float: left;
@@ -159,12 +156,9 @@
 
 .cart-bottom {
     width: 50%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    float: left;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: flex-start;
     }
 
 .checkout-button {
@@ -185,26 +179,25 @@
     }
 
 .wishlist {
-    width: 15%;
-    overflow-x: auto;
-    overflow-y: hidden;
+    width: 150px;
     align-items: center;
     float: left;
     }
 
 .wishlist-field-top {
+    display: flex;
+    gap: 5px;
     margin-top: 30px;
     overflow-x: auto;
     overflow-y: hidden;
     align-items: flex-end;
+    justify-content: center;
     }
 
 .wishlist-top-image {
     width: 14%;
-    margin-left: 65px;
+    margin-left: 50px;
     margin-bottom: 5px;
-    overflow-x: auto;
-    overflow-y: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,14 +209,11 @@ image.image-wish {
     }
 
 .wishlist-top {
-    width: 50%;
     margin-left: 5px;
     margin-top: 10px;
-    overflow-x: auto;
-    overflow-y: hidden;
     display: flex;
     justify-content: flex-start;
-    float: left;
+
     }
 
 .amount-wishlist {
@@ -238,7 +228,6 @@ image.image-wish {
     }
 
 .wishlist-field-bottom {
-    height: 50%;
     overflow-x: auto;
     overflow-y: hidden;
     display: flex;
@@ -247,14 +236,8 @@ image.image-wish {
     }
 
 .wishlist-bottom {
-    width: 100%;
-    margin-left: 15%;
-    overflow-x: auto;
-    overflow-y: hidden;
     display: flex;
-    justify-content: left;
     align-items: center;
-    float: left;
     }
 
 .wishlist-button {
@@ -291,7 +274,7 @@ a{
     border:2px solid #d8dce0;
 }
      
-.wraper_content{   
+.wraper_content{  
     text-align: center;
     padding-top: 10px;
     padding-left: 10px;
@@ -315,7 +298,15 @@ a{
 }
 
 .title_block{
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
+    width: 150px;
+    height: 50px; 
+}
+.title_text{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .author_block{
