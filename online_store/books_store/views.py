@@ -1,6 +1,8 @@
+import flask
+
 from online_store import app
 from online_store.books_store.models import *
-from flask import jsonify, render_template, request
+from flask import jsonify, render_template, request, abort
 
 
 @app.route('/')
@@ -40,8 +42,16 @@ def get_all_books():
             "price": book.price,
             "amount": book.amount,
             "image_path": book.image_path,
-            "author_id": book.author.id,
+            "author_name": book.author.name,
             "genre": [gen.name for gen in book.genres]}
         result.append(my_json)
     return jsonify(result)
-  
+
+
+@app.route('/api/book/images/<int:id>')
+def images(id):
+    book = Book.query.filter_by(id=id).first()
+    if not book:
+        return abort(404)
+    path = book.image_path
+    return flask.send_from_directory('../instance/images', path=path)
