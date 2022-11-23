@@ -6,59 +6,62 @@
         <li><a class="nav-list_a" href="#">Help</a></li>
     </ul>
 </div>
-<div class="header">
-    <div class="logo">
-        <img class="image" src="../static/img/logo.png" alt="logo" />
-    </div>
-    <div class="search">
-        <div class="search-field">
-            <form method="">
-                <div class="search-field-input">
-                    <input class="search-input" type="search" name="q" placeholder="">
+<div class="wraper_header">
+    <div class="header">
+        <div class="logo">
+            <img class="image" id="image" src="../static/img/logo.png" alt="logo" />
+        </div>
+        <div class="search">
+            <div class="search-field">
+                <form method="" class="search_form">
+                    <div class="search-field-input">
+                        <input class="search-input" type="search" name="q" placeholder="">
+                    </div>
+                    <div class="search-field-button">
+                         <button class="search-button" type="submit">
+                             <img src="static/img/poisk-300x299.png" alt="" width="25px">
+                             <span class="search_button_value">Search</span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="cart">
+            <div class="cart-field-top">
+                <div class="cart-top">
+                    <img class="image" src="../static/img/cart.png" alt="">
                 </div>
-                <div class="search-field-button">
-                     <button class="search-button" type="submit">
-                         <img src="static/img/poisk-300x299.png" alt="" width="25px">
-                         <span class="search_button_value">Search</span></button>
+                <div class="cart-top-your-cart">
+                    <p class="your-cart">Your&nbsp;cart</p>
                 </div>
-            </form>
-        </div>
-    </div>
-    <div class="cart">
-        <div class="cart-field-top">
-            <div class="cart-top">
-                <img class="image" src="../static/img/cart.png" alt="">
+                <div class="cart-top-items">
+                    <p class="amount-items">(2&nbsp;items)</p>
+                </div>
             </div>
-            <div class="cart-top-your-cart">
-                <p class="your-cart">Your&nbsp;cart</p>
-            </div>
-            <div class="cart-top-items">
-                <p class="amount-items">(2&nbsp;items)</p>
+            <div class="cart-field-bottom">
+                <div class="cart-bottom">
+                    <p class="price">$125.0</p>
+                </div>
+                <div class="cart-bottom">
+                    <input class="checkout-button" type="submit" value="Checkout">
+                </div>
             </div>
         </div>
-        <div class="cart-field-bottom">
-            <div class="cart-bottom">
-                <p class="price">$125.0</p>
+        <div class="line"></div>
+        <div class="wishlist">
+            <div class="wishlist-field-top">
+                <div class="wishlist-top-image">
+                    <img class="image-wish" src="../static/img/star.png" alt="logo" />
+                </div>
+                <div class="wishlist-top">
+                    <div class="amount-wishlist">20</div>
+                </div>
             </div>
-            <div class="cart-bottom">
-                <input class="checkout-button" type="submit" value="Checkout">
-            </div>
-        </div>
-    </div>
-    <div class="line"></div>
-    <div class="wishlist">
-        <div class="wishlist-field-top">
-            <div class="wishlist-top-image">
-                <img class="image-wish" src="../static/img/star.png" alt="logo" />
-            </div>
-            <div class="wishlist-top">
-                <div class="amount-wishlist">20</div>
-            </div>
-        </div>
-        <div class="wishlist-field-bottom">
-            <div class="wishlist-bottom">
-                <input class="wishlist-button" type="submit" value="Wish list">
+            <div class="wishlist-field-bottom">
+                <div class="wishlist-bottom">
+                    <input class="wishlist-button" type="submit" value="Wish list">
+                </div>
             </div>
         </div>
     </div>
 </div>
+<script src="{{ url_for('static', filename='js/adaptive.js') }}"></script>

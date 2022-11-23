@@ -16,7 +16,13 @@ function createCards(response){
                 <div class="price">
                     <img class="rub" src="static/img/russian-rouble-coin-color-icon.svg" alt="">
                     <h3>${item.price}</h3>
-                    <div class="basket"><a href="#"><img class="rub" id="basket" src="static/img/icons8-продать-запас-48.png" alt=""></a></div>
+                    <div class="basket" >
+                        <a href="#">
+                            <img class="rub" id="basket" src="static/img/icons8-продать-запас-48.png" alt=""
+                                                        onmouseout="this.src='static/img/icons8-продать-запас-48.png'"
+                                                        onmouseover="this.src='static/img/icons8-купить.gif'">
+                        </a>
+                    </div>
                 </div>
                 `;
             document.querySelector(".wraper_content").appendChild(book)
