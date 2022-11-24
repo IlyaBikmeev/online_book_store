@@ -242,6 +242,18 @@ image.image-wish {
 
 /*** CONTENT ***/
 
+.flashed-msg {
+
+}
+
+.danger {
+    color: rgb(204, 30, 30);
+}
+
+.success {
+    color: rgb(122, 187, 25);
+}
+
 .section{
     color: #797979;
     margin: 0, auto;

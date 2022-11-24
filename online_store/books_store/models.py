@@ -1,4 +1,6 @@
 from online_store import db
+from flask_login import UserMixin
+from werkzeug.security import generate_password_hash, check_password_hash
 
 book_genre = db.Table('book_genre',
                         db.Column('book_id', db.Integer, db.ForeignKey('book.id')),
@@ -80,7 +82,7 @@ class Step(db.Model):
         self.name_step = name_step
 
 
-class Client(db.Model):
+class Client(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.String, nullable=False)
     last_name = db.Column(db.String, nullable=False)
@@ -90,10 +92,13 @@ class Client(db.Model):
     city_id = db.Column(db.Integer, db.ForeignKey('city.id'))
     orders = db.relationship('Order', backref='client')
 
-    def __init__(self, first_name, last_name, email, login, password_hash, city):
+    def __init__(self, first_name, last_name, email, login, password, city):
         self.first_name = first_name
         self.last_name = last_name
         self.email = email
         self.login = login
-        self.password_hash = password_hash
+        self.password_hash = generate_password_hash(password)
         self.city = city
+
+    def check_password(self, password):
+        return check_password_hash(self.password_hash, password)
